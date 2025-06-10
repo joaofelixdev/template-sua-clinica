@@ -1,3 +1,7 @@
+import visitCard from "@/../public/assets/visit-card.png";
+import clinic from "@/../public/assets/clinic.png";
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="about" className="max-w-6xl mx-auto py-16 px-4">
@@ -16,14 +20,14 @@ export default function About() {
       </div>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="bg-white rounded-2xl shadow p-8 flex flex-col items-center">
-          <img src="/assets/visit-card.png" alt="Logo" className="rounded-lg mb-6" />
+          <Image src={visitCard} alt="Logo" className="rounded-lg mb-6" />
           <h3 className="font-bold text-xl mb-2 text-blue-600">Quem Somos</h3>
           <p className="text-gray-600 text-center">
             Há mais de 10 anos, a Sua Clínica se dedica a cuidar de pessoas com carinho e excelência. Acreditamos em um atendimento próximo, humano e responsável — sempre colocando o bem-estar do paciente em primeiro lugar.
           </p>
         </div>
         <div className="bg-white rounded-2xl shadow p-8 flex flex-col items-center">
-          <img src="/assets/clinic.png" alt="Ambiente acolhedor" className="rounded-lg mb-6 object-cover" />
+          <Image src={clinic} alt="Ambiente acolhedor" className="rounded-lg mb-6 object-cover" />
           <h3 className="font-bold text-xl mb-2 text-blue-600">Cuidado em Cada Detalhe</h3>
           <p className="text-gray-600 text-center mb-4">
             Mais do que uma estrutura moderna, oferecemos um ambiente acolhedor, limpo e preparado para cuidar da sua saúde com excelência. Nosso time é formado por profissionais experientes e prontos para te atender com carinho.

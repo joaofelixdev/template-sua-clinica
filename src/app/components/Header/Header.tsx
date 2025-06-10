@@ -1,7 +1,10 @@
 'use client'
 
-import { Info, Stethoscope, Users, Building2, Mail } from "lucide-react";
+import { Info, Users, Building2, Mail } from "lucide-react";
 import { useEffect, useState } from "react";
+
+import logoSuaClinica from "@/../public/assets/logotipo.png"
+import Image from "next/image";
 
 export default function Header() {
   const [isFixed, setIsFixed] = useState(false);
@@ -32,7 +35,7 @@ export default function Header() {
   return (
     <header className={`w-full flex items-center justify-between px-6 py-4 rounded-xl z-50 transition-all duration-300 ${isFixed ? 'fixed top-0 left-0 bg-white shadow-lg animate-slideDown' : 'mt-4'}`}>
       <div className="flex items-center gap-2">
-        <img src="/assets/logotipo.png" alt="HealthCare+" className="w-36" />
+        <Image src={logoSuaClinica} alt="SuaClínica" className="w-36" />
       </div>
       <nav className={`hidden md:flex gap-2 text-gray-700 font-medium bg-white rounded-full px-2 py-1 ${isFixed && 'shadow-sm'}`}>
         <a href="#about" onClick={handleSmoothScroll} className="flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:bg-blue-50 hover:text-blue-600 group">

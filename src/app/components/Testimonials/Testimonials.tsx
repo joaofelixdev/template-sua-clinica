@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const testimonials = [
@@ -20,10 +21,10 @@ export default function Testimonials() {
       <div className="grid md:grid-cols-2 gap-8">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow flex gap-6 items-center">
-            <img src={testimonial.image} alt={testimonial.author} className="w-20 h-20 rounded-full object-cover" />
+            <Image src={testimonial.image} width={50} height={50} alt={testimonial.author} className="w-20 h-20 rounded-full object-cover" />
             <div>
-                <p className="text-gray-700 mb-2">"{testimonial.text}"</p>
-                <p className="text-gray-500 text-sm">— {testimonial.author}</p>
+              <p className="text-gray-700 mb-2">&quot;{testimonial.text}&quot;</p>
+              <p className="text-gray-500 text-sm">— {testimonial.author}</p>
             </div>
           </div>
         ))}

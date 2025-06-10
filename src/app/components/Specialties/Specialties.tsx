@@ -51,7 +51,7 @@ export default function Specialties() {
         <p className="text-gray-600 text-center max-w-2xl">Na Sua Clínica, você encontra atendimento completo com profissionais experientes e estrutura para exames no próprio local.</p>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {specialties.map((spec, idx) => (
+        {specialties.map((spec) => (
           <div
             key={spec.title}
             className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition-transform transition-shadow duration-200 hover:scale-[1.03] hover:shadow-lg group"

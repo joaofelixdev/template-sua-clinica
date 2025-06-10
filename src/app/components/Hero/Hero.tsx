@@ -1,6 +1,7 @@
 'use client'
 
-import { ArrowRightIcon } from "lucide-react"
+import heroImage from "@/../public/assets/hero-image.png";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -28,7 +29,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="mt-8 md:mt-0">
-        <img src="/assets/hero-image.png" alt="Cérebro" className="object-contain rounded-lg" loading="lazy" />
+        <Image src={heroImage} alt="Cérebro" className="object-contain rounded-lg" loading="lazy" />
       </div>
     </section>
   )

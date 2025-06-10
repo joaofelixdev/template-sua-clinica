@@ -1,6 +1,9 @@
 import React from 'react';
 import { FaParking, FaClipboardList, FaCalendarCheck, FaXRay } from 'react-icons/fa';
 
+import reception from "@/../public/assets/reception.png";
+import Image from 'next/image';
+
 const Structure = () => {
   return (
     <section className="py-16 px-4 max-w-6xl mx-auto" id="structure">
@@ -10,7 +13,7 @@ const Structure = () => {
       </p>
       <div className="flex flex-col md:flex-row gap-8">
         <div className="flex-1">
-          <img src="/assets/reception.png" alt="Recepção" className="w-full h-auto rounded-lg" />
+          <Image src={reception} alt="Recepção" className="w-full h-auto rounded-lg" />
         </div>
         <div className="flex-1">
           <p className="mb-4">
