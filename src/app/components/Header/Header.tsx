@@ -33,11 +33,11 @@ export default function Header() {
     }
   };
   return (
-    <header className={`w-full flex items-center justify-between px-6 py-4 rounded-xl z-50 transition-all duration-300 ${isFixed ? 'fixed top-0 left-0 bg-white shadow-lg animate-slideDown' : 'mt-4'}`}>
+    <header className={`w-full flex items-center justify-between px-6 py-4 rounded-xl z-50 transition-all duration-300 ${isFixed ? 'fixed top-0 left-0 bg-white animate-slideDown' : 'mt-4'}`}>
       <div className="flex items-center gap-2">
         <Image src={logoSuaClinica} alt="SuaClínica" className="w-36" />
       </div>
-      <nav className={`hidden md:flex gap-2 text-gray-700 font-medium bg-white rounded-full px-2 py-1 ${isFixed && 'shadow-sm'}`}>
+      <nav className={`hidden md:flex gap-2 text-gray-700 font-medium bg-white rounded-full px-2 py-1 ${!isFixed && 'shadow-sm'}`}>
         <a href="#about" onClick={handleSmoothScroll} className="flex items-center gap-2 px-4 py-2 rounded-full transition-all duration-300 hover:bg-blue-50 hover:text-blue-600 group">
           <Info size={18} className="text-gray-400 group-hover:text-blue-600 transition-colors duration-300" />
           Sobre
