@@ -54,7 +54,7 @@ export default function Specialties() {
         {specialties.map((spec) => (
           <div
             key={spec.title}
-            className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition-transform transition-shadow duration-200 hover:scale-[1.03] hover:shadow-lg group"
+            className="bg-white rounded-xl shadow-md p-6 flex flex-col items-center transition duration-200 hover:scale-[1.03] hover:shadow-lg group"
           >
             <div className="mb-3">{spec.icon}</div>
             <h3 className="font-semibold text-lg text-center mb-1 group-hover:text-blue-700 transition-colors">{spec.title}</h3>
