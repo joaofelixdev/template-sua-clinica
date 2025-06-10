@@ -1,6 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Roboto } from '@next/font/google'
+import { Roboto } from 'next/font/google'
 import Warning from './components/Warning'
 
 export const metadata: Metadata = {
